@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input/> <!--aberto um campo para entrada de texto no navegador-->
+<button> Exibir texto dgitado </button> <!--botão em tela-->
+<body>
+    <script>
+        var input = document.querySelector("input");
+            function exibeTexto() {
+                alert(input.value); //vai passar a TAG e o valor da tag
+            }
+    
+        var button = document.querySelector("button");
+        button.onclick = exibeTexto;
+    </script>
+</body>
+</html>

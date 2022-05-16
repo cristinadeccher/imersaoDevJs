@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso){
+      
+        var imc = peso/(altura * altura);
+        return imc; //somente vai mostrar o valor quando chamar o return na função
+
+    }
+
+    var pesoTina = 58;
+    var alturaTina = 1.62;
+    var imcTina = calculaImc(pesoTina, alturaTina);
+
+    var pesoAmigo = 89;
+    var alturaAmigo = 1.85;
+    var imcAmigo = calculaImc(pesoAmigo, alturaAmigo);
+
+    mostra(imcAmigo);
+    mostra(imcTina);
+   
+</script>

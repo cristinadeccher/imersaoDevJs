@@ -1,0 +1,23 @@
+<script></script> - Identifica o código em java script
+Alert() - Exibe popup conforme o parâmetro
+chartset = "UTF-8" - Identifica o conteúdo do parâmetro
+document.write() - imprime a informação na tela
+var - declaração de variável
+math.round() - arredondamento de valores 
+math.randon() - metodo para 
+function verbodaacao() { inserir a necessidade - atalho parao outra }
+return () - vai retornar o parâmetro depois de chamada a função
+parseInt() - converter letras em números
+Palavras reservadas (var, function, )
+Igualdade "=" atribuição
+Comparação "==" boleano ou falso
+Comparação identica "===" compara o tipo e o valor
+Operadores artiméticos - operados matemáticos
+Operadores relacionais - 
+Operadores lógicos - E = "&&", ou e não
+If - else - Estrutura de Condição if(condição = true){ bloco de codigo} else {condição = false}
+If - else if - else - estrutura de condição de 
+
+for é repetição: declara valor; condição de repetição; incrementando
+    for(var multiplicador = 1; multiplicador <=10; multiplicador++){ }
+while é repetição

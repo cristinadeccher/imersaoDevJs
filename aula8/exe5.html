@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input/>
+<button> Compare o meu segredo </button>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br>");
+        }
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        function sorteia(){ //função para sortear os numeros aleatórios
+            return Math.round(Math.random()*10);
+        }
+
+        function sorteiaNumeros(quantidade) { //função para sortear uma quantidade de numeros aleatórios
+
+            var segredos = [];
+
+            var numero = 1; //quantidade máxima de números para ser atingida
+
+            while (numero <= quantidade) { //verifica se o numero está de acordo com aquantidade
+
+                segredos.push(sorteia ()); //depois de verificar sorteia um numero
+                numero++; //executa de acordo com os numeros
+            }
+
+            return segredos;
+        }
+        var segredos = sorteiaNumeros(3); //a quantidade de segredos a ser sorteado
+
+        console.log(segredos); //mostra os numeros\segredos no console
+
+        var input = document.querySelector("input");
+            input.focus(); //caixa de texto ganhe foco sempre que recarregarmos a página
+
+        function verifica() {
+
+            if (input.value == segredo) {
+                alert("Você Acertou!");
+
+            } else {
+                alert ("Você Errou!!!");
+            }
+            input.value = "";
+            input.focus();
+        }
+        var button = document.querySelector("button");
+            button.onclick = verifica;
+
+    </script>
+</body>
+</html>
